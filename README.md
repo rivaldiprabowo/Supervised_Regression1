@@ -7,7 +7,7 @@ These notebooks serve as the final project of Job Connector-Data Science and Mac
 </p>
 
 <p align="center">
-![ReadMe Header](https://user-images.githubusercontent.com/99151517/160814786-033cfac7-736c-46df-8d0d-8bbe0b3a1a29.jpg)
+![ReadMe Header](https://user-images.githubusercontent.com/99151517/160825562-6bb39e41-b52d-48a9-9fac-adcf3ddc5f91.jpg)
 </p>
 
 ## Background
