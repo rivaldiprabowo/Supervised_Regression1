@@ -107,11 +107,11 @@ From dataframe we use selection indexing to filter sale_year where worldwide cri
 # Summary and Recommendation
 <p align='justify' style="font-weight: bold;">
 Model conclusion:
-* There are 24 features (8 numerical and 16 categorical) and 484.058 rows data for modeling purposes.
-* Based on Cross Validation we choose Random Forest Regressor model, because it has the lowest MAPE score (14.47% in Model 1 and 13.32% in Model 2) and the most stable (lowest standard deviation).
-* From comparison between Model 1 and Model 2 we choose Model 2 over Model 1 because extra feature engineering can boost test score (dataset test) from MAPE score 13,18% in Model 1 to 12,25% in Model 2. This extra feature engineering also boost others metric evaluation score.
-* `total_livable_area` is the most importance feature in Model 2 and then followed by `number_stories`, `zip_codes`, `property_age`, `sale_year` ,`total_area`, and `overall_condition`, respectively.
-
+   * There are 24 features (8 numerical and 16 categorical) and 484.058 rows data for modeling purposes.
+   * Based on Cross Validation we choose Random Forest Regressor model, because it has the lowest MAPE score (14.47% in Model 1 and 13.32% in Model 2) and the most stable (lowest standard deviation).
+   * From comparison between Model 1 and Model 2 we choose Model 2 over Model 1 because extra feature engineering can boost test score (dataset test) from MAPE score 13,18% in Model 1 to 12,25% in Model 2. This extra feature engineering also boost others metric evaluation score.
+   * `total_livable_area` is the most importance feature in Model 2 and then followed by `number_stories`, `zip_codes`, `property_age`, `sale_year` ,`total_area`, and `overall_condition`, respectively.
+   
 Our group can make model to predict market value property with MAPE score (dataset test) around 12,12% which categorized as good model prediction. This model can answer the problem statement, so the property agent has an option not to use professional appraisal to asses market value of property in Philadelphia, just use this model instead to reduce operational cost. But there are some limitation for this model.
 
 Model Recommendation:
