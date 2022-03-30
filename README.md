@@ -2,9 +2,14 @@
 ## Philadelphia Property Value Prediction
 ### By: Muhammad Rivaldi Prabowo along with Billy Witanto and Vinsensia Fresian Meiliana as member of AlphaEngineer Group in Job Connector Data Science Program Batch 15 Purwadhika Startup and Coding School.
 
+<p align="center">
+![ReadMe Header](https://user-images.githubusercontent.com/99151517/160825562-6bb39e41-b52d-48a9-9fac-adcf3ddc5f91.jpg)
+</p>
+
 <p align='justify' style="font-weight: bold;">
 These notebooks serve as the final project of Job Connector-Data Science and Machine Learning program at Purwadhika Start-up and Coding School.
 </p>
+
 
 ## Background
 <p align='justify' style="font-weight: bold;">
