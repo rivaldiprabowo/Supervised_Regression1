@@ -3,6 +3,7 @@
 ### By: Muhammad Rivaldi Prabowo along with Billy Witanto and Vinsensia Fresian Meiliana as member of AlphaEngineer Group in Job Connector Data Science Program Batch 15 Purwadhika Startup and Coding School.
 
 <p align="center">
+   
 ![ReadMe Header](https://user-images.githubusercontent.com/99151517/160825562-6bb39e41-b52d-48a9-9fac-adcf3ddc5f91.jpg)
 </p>
 
@@ -111,7 +112,17 @@ Model conclusion:
    * Based on Cross Validation we choose Random Forest Regressor model, because it has the lowest MAPE score (14.47% in Model 1 and 13.32% in Model 2) and the most stable (lowest standard deviation).
    * From comparison between Model 1 and Model 2 we choose Model 2 over Model 1 because extra feature engineering can boost test score (dataset test) from MAPE score 13,18% in Model 1 to 12,25% in Model 2. This extra feature engineering also boost others metric evaluation score.
    * `total_livable_area` is the most importance feature in Model 2 and then followed by `number_stories`, `zip_codes`, `property_age`, `sale_year` ,`total_area`, and `overall_condition`, respectively.
-   
+   Read more literature to know more about the domain knowledge, this will reduce the assumption with fact.
+Doing another extra feature engineering by exploring more about current features (deepen the feature analysis and take a look the relation between feature-feature and feature-label).
+Fix the value in features, so value from other value can match logically with another.
+Doing several combination change like extracting, simplify and re-categorize to get more model and get better result.
+Doing normalization to the feature, this can make us have more model option and get better result.
+Improvement by doing hyperparameter tuning.
+Drop some features with low importance feature score.
+Gather another data to increase confidence level while predict high market value properties
+We must aware to the data which has strong affected by external factor (maybe try to generate one feature to distinguish data which affected by external factor or not).
+Need for another extra data/feature, like data for every property sold in Philadelphia in 2020 until 2022.
+
 Our group can make model to predict market value property with MAPE score (dataset test) around 12,12% which categorized as good model prediction. This model can answer the problem statement, so the property agent has an option not to use professional appraisal to asses market value of property in Philadelphia, just use this model instead to reduce operational cost. But there are some limitation for this model.
 
 Model Recommendation:
