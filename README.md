@@ -75,7 +75,9 @@ We select the features that will be used in the model building based on evidence
 ## Model Analysis
 <p align='justify' style="font-weight: bold;">
 1. General analysis
+  
 From the result before, I choose Model 2 over Model 1 because it shows higher MAPE score on dataset test (12.25%). Based on reference <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119199885.app1">Reference</a> MAPE below 10% indicating an excellent accuracy of the prediction model, while 10-20% indicating a good accuracy, so our model is a Good Model.
+  
 This model has its own limitation, this model can only use inside these criteria:
 * 5500<= market_value <=150.000.000
 * 0<= number_of_bedrooms <=93
@@ -84,14 +86,18 @@ This model has its own limitation, this model can only use inside these criteria
 * 0<= property_age <=368
 * 600<= total_area <=100.000
 * 600<= total_livable_area <=798.189
+  
 2. Confidence area
 Our model can work better in property which has market_value below 20.000.000, we call this confidence area. Our model also can be use to predict market_value above 20.000.000 with lower confidence level, because there are 65% chance of our prediction can classified as not a good prediction (MAPE score above 20%).
+  
 3. There are unrelevant feature value
 ![model analysis 3](https://user-images.githubusercontent.com/99151517/160823785-11c51782-d5bf-4732-88be-1feb8a8bb7b5.JPG)
 As we can see in the data frame, Vacant Land should be an empty land without number stories,  but there are value in those features, so this unwanted occurrence value cause MAPE mean score for this category has high value (180.482%).
+  
 4. Lower actual market_value
 ![model analysis 5](https://user-images.githubusercontent.com/99151517/160824170-1c93afbc-f4b7-4a55-8109-1ef94acac793.JPG)
 As we can see in the Dataframe (dataset test), dataframe which grouped by categorical code Industrial, the highest livable_total_area has MAPE score 1231,71% and many of the top 12 highest livable_total_area has MAPE score above 20% (MAPE score for good model) (9 of 12 top data). We analyze that such high MAPE was caused by the actual market_value was set too low from the majority of data with the same specifications. This could be external factor that model cannot predict (of course it’s called outliers).
+  
 5. Worldwide External Factor
 ![model analysis 7](https://user-images.githubusercontent.com/99151517/160824484-c6f289c2-ec29-4ad2-aa2e-de66e1e780ff.JPG)
 ![model analysis 9](https://user-images.githubusercontent.com/99151517/160824689-7b348ad0-2961-4dcb-b768-3861c84c06d3.JPG)
