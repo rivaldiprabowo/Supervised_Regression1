@@ -42,7 +42,9 @@ Detailed EDA to further understand the characteristics and correlations of the f
 ## Feature Selection
 <p align='justify' style="font-weight: bold;">
 We select the features that will be used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge. We decide to build two models, so the feature selection of those models will slightly different.
+   
 ![FS1](https://user-images.githubusercontent.com/99151517/160816200-1eaf4573-c540-423d-b59e-a8701b302fa7.JPG)
+   
 ![FS2](https://user-images.githubusercontent.com/99151517/160816208-3418fc39-9b21-4f11-a48c-bf74fc0b10e8.JPG)
 </p>
 
@@ -51,9 +53,12 @@ We select the features that will be used in the model building based on evidence
 1. **Model 1**
     * Selected algorithm models for cross-validation process are: Linear Regression (Parametric), Random Forest Regressor (Non-Parametric), dan XGBoost Classifier (Non-Parametric).
     * Evaluation metric that suite for this bussiness case is mean absolute percentage error (MAPE), also we calculate the others evaluation metrics, such as MSE, RMSE, MAE, and R-Squared.
+   
     * ![cv1](https://user-images.githubusercontent.com/99151517/160820504-0d24f4fb-0352-4540-8ac7-ac4c95402b64.JPG)
     * Selected model from cross-validation process is Random Forest Regressor with MAPE score 14.47%.
+   
     * ![model performance1](https://user-images.githubusercontent.com/99151517/160821354-1ab4d00a-f3b5-43a5-94ed-568442e2a7ed.JPG)
+   
     * ![model1](https://user-images.githubusercontent.com/99151517/160822661-1685f34e-7672-4508-8c35-b871be582b4f.jpg)
     * Evaluation this model using dataset test give us MAPE score 13.18%.
     * This model don't use hyperparameter tunning, due to incapability of our personal laptop to run the process with enormous data.
@@ -64,9 +69,12 @@ We select the features that will be used in the model building based on evidence
     * Selected algorithm models for cross-validation process are: Linear Regression (Parametric), Random Forest Regressor (Non-Parametric), dan XGBoost Classifier (Non-Parametric).
     * This Model use extra feature engineering in order to boost model performace (grouping zip_codes into several simplified category based on distance from city center, simplify fireplaces feature, extracting words and grouping it based on building code description along with creation of new feature.)
     * Evaluation metric that suite for this bussiness case is mean absolute percentage error (MAPE), also we calculate the others evaluation metrics, such as MSE, RMSE, MAE, and R-Squared.
+   
     * ![cv2](https://user-images.githubusercontent.com/99151517/160820982-e10654f1-ff01-4084-8ccc-2ad0a0094959.JPG)
     * Selected model from cross-validation process is Random Forest Regressor with MAPE score 13.32%.
+   
     * ![model2](https://user-images.githubusercontent.com/99151517/160822667-83d24a55-2b5e-46c5-8643-b22df15a6fde.jpg)
+   
     * ![model performance2](https://user-images.githubusercontent.com/99151517/160821495-e7268693-dacc-4644-bdd6-abe870c3b848.JPG)
     * Evaluation this model using dataset test give us MAPE score 12.25%.
     * This model don't use hyperparameter tunning, due to incapability of our personal laptop to run the process with enormous data.
@@ -107,21 +115,12 @@ From dataframe we use selection indexing to filter sale_year where worldwide cri
 
 # Summary and Recommendation
 <p align='justify' style="font-weight: bold;">
+   
 Model conclusion:
    * There are 24 features (8 numerical and 16 categorical) and 484.058 rows data for modeling purposes.
    * Based on Cross Validation we choose Random Forest Regressor model, because it has the lowest MAPE score (14.47% in Model 1 and 13.32% in Model 2) and the most stable (lowest standard deviation).
    * From comparison between Model 1 and Model 2 we choose Model 2 over Model 1 because extra feature engineering can boost test score (dataset test) from MAPE score 13,18% in Model 1 to 12,25% in Model 2. This extra feature engineering also boost others metric evaluation score.
    * `total_livable_area` is the most importance feature in Model 2 and then followed by `number_stories`, `zip_codes`, `property_age`, `sale_year` ,`total_area`, and `overall_condition`, respectively.
-   Read more literature to know more about the domain knowledge, this will reduce the assumption with fact.
-Doing another extra feature engineering by exploring more about current features (deepen the feature analysis and take a look the relation between feature-feature and feature-label).
-Fix the value in features, so value from other value can match logically with another.
-Doing several combination change like extracting, simplify and re-categorize to get more model and get better result.
-Doing normalization to the feature, this can make us have more model option and get better result.
-Improvement by doing hyperparameter tuning.
-Drop some features with low importance feature score.
-Gather another data to increase confidence level while predict high market value properties
-We must aware to the data which has strong affected by external factor (maybe try to generate one feature to distinguish data which affected by external factor or not).
-Need for another extra data/feature, like data for every property sold in Philadelphia in 2020 until 2022.
 
 Our group can make model to predict market value property with MAPE score (dataset test) around 12,12% which categorized as good model prediction. This model can answer the problem statement, so the property agent has an option not to use professional appraisal to asses market value of property in Philadelphia, just use this model instead to reduce operational cost. But there are some limitation for this model.
 
