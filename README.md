@@ -50,6 +50,7 @@ We select the features that will be used in the model building based on evidence
 
 ## Modeling
 <p align='justify' style="font-weight: bold;">
+   
 1. **Model 1**
     * Selected algorithm models for cross-validation process are: Linear Regression (Parametric), Random Forest Regressor (Non-Parametric), dan XGBoost Classifier (Non-Parametric).
     * Evaluation metric that suite for this bussiness case is mean absolute percentage error (MAPE), also we calculate the others evaluation metrics, such as MSE, RMSE, MAE, and R-Squared.
