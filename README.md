@@ -6,10 +6,6 @@
 These notebooks serve as the final project of Job Connector-Data Science and Machine Learning program at Purwadhika Start-up and Coding School.
 </p>
 
-<p align="center">
-![ReadMe Header](https://user-images.githubusercontent.com/99151517/160825562-6bb39e41-b52d-48a9-9fac-adcf3ddc5f91.jpg)
-</p>
-
 ## Background
 <p align='justify' style="font-weight: bold;">
 Philadelphia city is one of the hottest real estate market in the US. With high increment every year, its property price is suprisingly lower compared to other cities in the US. That said, with lowered home demand index in 2022 compared to 2021, this is the best time for property agent to actively promote its remaining properties listed. 
