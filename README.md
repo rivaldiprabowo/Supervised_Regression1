@@ -63,7 +63,7 @@ We select the features that will be used in the model building based on evidence
     * ![model1](https://user-images.githubusercontent.com/99151517/160822661-1685f34e-7672-4508-8c35-b871be582b4f.jpg)
     * Evaluation this model using dataset test give us MAPE score 13.18%.
     * This model don't use hyperparameter tunning, due to incapability of our personal laptop to run the process with enormous data.
-    * Selected algorithm for this model is Random Forest Regressor with Recall score 13.18% (Dataset test).
+    * Selected algorithm for this model is Random Forest Regressor with MAPE score 13.18% (Dataset test).
 
 
 2. **Model 2**
@@ -79,7 +79,7 @@ We select the features that will be used in the model building based on evidence
     * ![model performance2](https://user-images.githubusercontent.com/99151517/160821495-e7268693-dacc-4644-bdd6-abe870c3b848.JPG)
     * Evaluation this model using dataset test give us MAPE score 12.25%.
     * This model don't use hyperparameter tunning, due to incapability of our personal laptop to run the process with enormous data.
-    * Selected algorithm for this model is Random Forest Regressor with Recall score 12.25% (Dataset test).
+    * Selected algorithm for this model is Random Forest Regressor with MAPE score 12.25% (Dataset test).
 </p>
 
 ## Model Analysis
